@@ -14,7 +14,7 @@ node server.js
 npm install
 
 - Run:
-npm run servel
+npm run serve
 
 
 Para o funcionamento da aplicação, recomenda-se criar um banco de dados MySQL com nome “avteste”. Outras configurações do banco de dados encontram-se no arquivo "db.config.js" contido na pasta "Back-end/app/config".
