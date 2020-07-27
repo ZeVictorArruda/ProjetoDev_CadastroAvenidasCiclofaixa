@@ -71,8 +71,15 @@ exports.delete = (req, res) => {
 // Atualiza por ID
 exports.update = (req, res) => {
     const id = req.params.id
+    let avenida_up = {
+        nome: req.body.nome,
+        extensao: req.body.extensao,
+        ciclofaixa: req.body.ciclofaixa,
+        extciclo: req.body.extciclo,
+        porcentagem: ((req.body.extciclo / req.body.extensao) * 100).toFixed(2)
+    }
 
-    Av.update(req.body, {where: {id: id}}).then(num => {
+    Av.update(avenida_up, {where: {id: id}}).then(num => {
         if (num = 1) {
             res.send('Avenida atualizada')
         } else {

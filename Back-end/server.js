@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 const db = require('./app/models')
 
-db.sequelize.sync({force: true}).then(() => {  // Função deve ser comentada após primeira inicalização
+// Sincronização do banco
+db.sequelize.sync().then(() => {
     console.log('Drop and re-sync db.')
 })
 
@@ -17,8 +18,6 @@ db.sequelize.sync({force: true}).then(() => {  // Função deve ser comentada ap
 app.get('/', (req, res) => {
     res.send('Bem vindo à aplicação')
 })
-
-
 
 
 // Rotas
