@@ -1,5 +1,8 @@
 # ProjetoDev_CadastroAvenidasCiclofaixa
-Aplicação criada para cadastro de avenidas, suas extensões e extensões de suas ciclofaixas, caso exista.
+Aplicação CRUD criada para cadastro de avenidas, suas extensões e extensões de suas ciclofaixas, caso exista. 
+
+A aplicação retornará no front-end a lista de avenidas cadastradas e a porcentagem de cobertura de ciclofaixa de cada avenida.
+Também é possível, diretamente do front-end, editar e excluir avenidas cadastradas.
 
 * Back-end:
 - Configuração:
